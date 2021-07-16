@@ -1,4 +1,24 @@
 ﻿<Properties StartupConfiguration="{57D39200-1C4E-465D-8BDE-973A7517B619}|Default">
+  <MonoDevelop.Ide.ItemProperties.PokedexApi.Test FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PokedexApi" expanded="True">
+            <Node name="PokedexApi" expanded="True" />
+            <Node name="PokedexApi.Test" expanded="True">
+              <Node name="UnitTest1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.PokedexApi FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.PokedexApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
