@@ -4,14 +4,14 @@
     "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/PokedexApi.Test.csproj": {}
   },
   "projects": {
-    "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/PokedexApi.Test.csproj": {
+    "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/PokedexApi.Test.csproj",
-        "projectName": "PokedexApi.Test",
-        "projectPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/PokedexApi.Test.csproj",
+        "projectUniqueName": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj",
+        "projectName": "PokedexApi",
+        "projectPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj",
         "packagesPath": "/Users/joshuaosei/.nuget/packages/",
-        "outputPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/obj/",
+        "outputPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joshuaosei/.config/NuGet/NuGet.Config"
@@ -38,9 +38,98 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.26.0.34506, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/PokedexApi.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/PokedexApi.Test.csproj",
+        "projectName": "PokedexApi.Test",
+        "projectPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/PokedexApi.Test.csproj",
+        "packagesPath": "/Users/joshuaosei/.nuget/packages/",
+        "outputPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joshuaosei/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj": {
+                "projectPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.26.0.34506, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
