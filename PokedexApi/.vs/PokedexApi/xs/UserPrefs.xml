@@ -1,29 +1,32 @@
 ﻿<Properties StartupConfiguration="{57D39200-1C4E-465D-8BDE-973A7517B619}|Default">
-  <MonoDevelop.Ide.ItemProperties.PokedexApi.Test FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dto/PokemonSpecies.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
-      <File FileName="Controllers/PokemonController.cs" Line="30" Column="22" />
-      <File FileName="Models/EmptyClass.cs" Line="29" Column="46" />
-      <File FileName="PokedexApi.Test/ControllerTests/UnitTest1.cs" Line="25" Column="10" />
-      <File FileName="Helpers/RequestBuilder.cs" Line="15" Column="1" />
-      <File FileName="appsettings.json" Line="10" Column="48" />
-      <File FileName="Repository/EmptyClass.cs" Line="9" Column="48" />
-      <File FileName="Dto/DescriptionLanguage.cs" Line="8" Column="53" />
-      <File FileName="Dto/Description.cs" Line="8" Column="62" />
-      <File FileName="Dto/Habitat.cs" Line="8" Column="50" />
-      <File FileName="Dto/PokemonSpecies.cs" Line="1" Column="1" />
+      <File FileName="Repository/EmptyClass.cs" Line="33" Column="48" />
+      <File FileName="../PokedexApi.Test/RespositoryTests/PokemonRepositoryTest.cs" Line="33" Column="35" />
+      <File FileName="appsettings.json" Line="10" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PokedexApi" expanded="True">
             <Node name="PokedexApi" expanded="True">
-              <Node name="Dto" expanded="True">
-                <Node name="PokemonSpecies.cs" selected="True" />
-              </Node>
+              <Node name="Dto" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
             <Node name="PokedexApi.Test" expanded="True">
-              <Node name="ControllerTests" expanded="True" />
+              <Node name="RespositoryTests" expanded="True" />
+              <Node name="ServiceTests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="PokedexApi" expanded="True">
+            <Node name="PokedexApi.Test" expanded="True">
+              <Node name="PokedexApi.Test.RespositoryTests" selected="True" />
             </Node>
           </Node>
         </State>
@@ -31,10 +34,17 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>PokedexApi.Test/PokedexApi.Test.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/Config/PokemonConfig.cs" relfile="Config/PokemonConfig.cs" line="8" column="1" />
+      <Breakpoint file="/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/Services/PokemonService.cs" relfile="Services/PokemonService.cs" line="32" column="1" />
+      <Breakpoint file="/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/Repositories/PokemonRepository.cs" relfile="Repositories/PokemonRepository.cs" line="30" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.PokedexApi FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.PokedexApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

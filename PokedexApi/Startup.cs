@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PokedexApi.Helpers;
+using PokedexApi.Repositories;
+using PokedexApi.Services;
 
 namespace PokedexApi
 {
@@ -27,6 +30,23 @@ namespace PokedexApi
         {
 
             services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("https://localhost:3000", "http://localhost:3000")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
+            services.AddSwaggerGen();
+
+            services.AddHttpClient<IPokemonRepository, PokemonRepository>();
+
+            services.AddScoped<IPokemonParser, PokemonParser>()
+                .AddScoped<IPokemonService, PokemonService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,11 +61,21 @@ namespace PokedexApi
 
             app.UseRouting();
 
+            app.UseSwagger();
+
             app.UseAuthorization();
+
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pokedex API");
+                c.RoutePrefix = string.Empty;
             });
         }
     }

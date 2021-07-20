@@ -6,8 +6,29 @@
 
   <ItemGroup>
     <None Remove="Controllers\" />
+    <None Remove="Models\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="SonarAnalyzer.CSharp" />
+    <None Remove="Helpers\" />
+    <None Remove="Repository\" />
+    <None Remove="Dto\" />
+    <None Remove="Services\" />
+    <None Remove="Swashbuckle.AspNetCore" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Dto\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.26.0.34506">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 </Project>

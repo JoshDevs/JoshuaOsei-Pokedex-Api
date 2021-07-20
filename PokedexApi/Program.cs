@@ -9,7 +9,8 @@ using Microsoft.Extensions.Logging;
 
 namespace PokedexApi
 {
-    public class Program
+    // static to show that Program class is not to be instantiated by any other class
+    public static class Program
     {
         public static void Main(string[] args)
         {

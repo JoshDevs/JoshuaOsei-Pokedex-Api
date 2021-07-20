@@ -14,7 +14,7 @@
         "outputPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/joshuaosei/.config/NuGet/NuGet.Config"
+          "/Users/joshuaosei/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -47,6 +47,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.26.0.34506, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.4, )"
             }
           },
           "imports": [
