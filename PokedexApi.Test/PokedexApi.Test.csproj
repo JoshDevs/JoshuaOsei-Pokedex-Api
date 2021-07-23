@@ -36,11 +36,13 @@
     <None Remove="coverlet.msbuild" />
     <None Remove="ServiceTests\" />
     <None Remove="RespositoryTests\" />
+    <None Remove="HelpersTests\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ControllerTests\" />
     <Folder Include="Coverage\" />
     <Folder Include="ServiceTests\" />
     <Folder Include="RespositoryTests\" />
+    <Folder Include="HelpersTests\" />
   </ItemGroup>
 </Project>

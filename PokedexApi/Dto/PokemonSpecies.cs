@@ -30,6 +30,6 @@
         /// Gets or Sets flag to determine if Pokemon is legendary.
         /// </summary>
         [JsonProperty(PropertyName = "is_legendary")]
-        public bool isLegendary { get; set; }
+        public bool IsLegendary { get; set; }
     }
 }

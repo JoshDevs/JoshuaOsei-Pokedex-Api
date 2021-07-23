@@ -25,7 +25,7 @@ namespace PokedexApi.Test.ServiceTests
             Name = "test",
             Description = new(),
             Habitat = new(),
-            isLegendary = false,
+            IsLegendary = false,
         };
 
         private readonly Pokemon pokemon = new()

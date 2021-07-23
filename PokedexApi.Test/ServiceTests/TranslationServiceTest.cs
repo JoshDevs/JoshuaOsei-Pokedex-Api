@@ -31,6 +31,26 @@
             IsLegendary = false,
         };
 
+        private readonly Pokemon other = new()
+        {
+            Name = "other",
+            Description = "another",
+            Habitat = "other",
+            IsLegendary = false,
+        };
+
+        private readonly TranslationResponse expectedResponse = new ()
+        {
+            Status = new TranslationStatusResponse()
+            {
+                Total = 1,
+            },
+            Contents = new TranslationContentsResponse()
+            {
+                Translated = "translated",
+            },
+        };
+
         public TranslationServiceTest()
         {
             mockPokemonRepository = new Mock<IPokemonRepository>(MockBehavior.Strict);
@@ -41,12 +61,34 @@
         [Fact]
         public async Task CallingGetTransationWithLegendaryPokemonReturnsString()
         {
-            mockPokemonRepository.Setup(x => x.GetTranslation(legendary.Description, "application/json")).ReturnsAsync(new TranslationResponse());
+            mockPokemonRepository.Setup(x => x.GetTranslation(legendary.Description, "yoda")).ReturnsAsync(expectedResponse);
 
             var response = await translationService.GetTranslation(legendary);
             response.Should().BeOfType<string>();
 
-            mockPokemonRepository.Verify(a => a.GetTranslation(legendary.Description, "application/json"), Times.Once);
+            mockPokemonRepository.Verify(a => a.GetTranslation(legendary.Description, "yoda"), Times.Once);
+        }
+
+        [Fact]
+        public async Task CallingGetTransationWithCavePokemonReturnsString()
+        {
+            mockPokemonRepository.Setup(x => x.GetTranslation(cave.Description, "yoda")).ReturnsAsync(expectedResponse);
+
+            var response = await translationService.GetTranslation(cave);
+            response.Should().BeOfType<string>();
+
+            mockPokemonRepository.Verify(a => a.GetTranslation(cave.Description, "yoda"), Times.Once);
+        }
+
+        [Fact]
+        public async Task CallingGetTransationWithPokemonReturnsString()
+        {
+            mockPokemonRepository.Setup(x => x.GetTranslation(other.Description, "shakespeare")).ReturnsAsync(expectedResponse);
+
+            var response = await translationService.GetTranslation(other);
+            response.Should().BeOfType<string>();
+
+            mockPokemonRepository.Verify(a => a.GetTranslation(other.Description, "shakespeare"), Times.Once);
         }
     }
 }

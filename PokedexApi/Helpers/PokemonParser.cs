@@ -17,7 +17,7 @@
                 Name = pokemonSpecies.Name,
                 Description = pokemonSpecies.Description.FirstOrDefault(x => x.DescriptionLanguage.Language == "en").DescriptionText,
                 Habitat = pokemonSpecies.Habitat.Name,
-                IsLegendary = pokemonSpecies.isLegendary,
+                IsLegendary = pokemonSpecies.IsLegendary,
             };
 
             return data;

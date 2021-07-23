@@ -1,0 +1,11 @@
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/appsettings.Development.json
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/appsettings.json
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/PokedexApi.dll
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/PokedexApi.runtimeconfig.json
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/PokedexApi.pdb
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/Microsoft.OpenApi.dll
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/Newtonsoft.Json.dll
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/bin/Release/net5.0/publish/PokedexApi.deps.json
