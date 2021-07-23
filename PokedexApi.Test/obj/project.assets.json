@@ -6670,32 +6670,35 @@
     ]
   },
   "packageFolders": {
-    "/Users/joshuaosei/.nuget/packages/": {}
+    "C:\\Users\\joo01\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi.Test/PokedexApi.Test.csproj",
+      "projectUniqueName": "C:\\Users\\joo01\\source\\JoshuaOsei-Pokedex-Api\\PokedexApi.Test\\PokedexApi.Test.csproj",
       "projectName": "PokedexApi.Test",
-      "projectPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi.Test/PokedexApi.Test.csproj",
-      "packagesPath": "/Users/joshuaosei/.nuget/packages/",
-      "outputPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi.Test/obj/",
+      "projectPath": "C:\\Users\\joo01\\source\\JoshuaOsei-Pokedex-Api\\PokedexApi.Test\\PokedexApi.Test.csproj",
+      "packagesPath": "C:\\Users\\joo01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joo01\\source\\JoshuaOsei-Pokedex-Api\\PokedexApi.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/joshuaosei/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\joo01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://packages.redwoodtest.com/nuget/redwood-packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj": {
-              "projectPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj"
+            "C:\\Users\\joo01\\source\\JoshuaOsei-Pokedex-Api\\PokedexApi\\PokedexApi.csproj": {
+              "projectPath": "C:\\Users\\joo01\\source\\JoshuaOsei-Pokedex-Api\\PokedexApi\\PokedexApi.csproj"
             }
           }
         }
@@ -6760,7 +6763,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

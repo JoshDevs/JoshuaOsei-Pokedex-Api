@@ -1,0 +1,12 @@
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\PokedexApi.exe
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\PokedexApi.dll
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\PokedexApi.runtimeconfig.json
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\PokedexApi.pdb
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\joo01\source\JoshuaOsei-Pokedex-Api\PokedexApi\obj\Release\net5.0\PubTmp\Out\PokedexApi.deps.json
