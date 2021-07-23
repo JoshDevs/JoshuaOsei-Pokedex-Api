@@ -1,6 +1,8 @@
 # JoshuaOsei-Pokedex-Api
 Pokedex Rest Api
 
+Unit test coverage included in Test project
+
 ## Instructions
 - Pull or download the prjoect folder onto your windows machine.
 - Find the PokedexApi.exe executable file in bin\release\net5.0\publish
