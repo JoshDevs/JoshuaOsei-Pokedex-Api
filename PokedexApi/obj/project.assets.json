@@ -272,7 +272,7 @@
       "outputPath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/joshuaosei/.nuget/NuGet/NuGet.Config"
+        "/Users/joshuaosei/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

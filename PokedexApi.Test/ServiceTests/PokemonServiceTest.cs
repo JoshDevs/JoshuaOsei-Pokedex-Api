@@ -16,46 +16,66 @@ namespace PokedexApi.Test.ServiceTests
     {
         private readonly Mock<IPokemonRepository> mockPokemonRepository;
         private readonly Mock<IPokemonParser> mockPokemonParser;
+        private readonly Mock<ITranslationService> mockTranslationService;
 
         private readonly PokemonService pokemonService;
 
+        private readonly PokemonSpecies pokemonSpecies = new()
+        {
+            Name = "test",
+            Description = new(),
+            Habitat = new(),
+            isLegendary = false,
+        };
+
+        private readonly Pokemon pokemon = new()
+        {
+            Name = "test",
+            Description = "expected",
+            Habitat = "something",
+            IsLegendary = false,
+        };
+
         public PokemonServiceTest()
         {
-            this.mockPokemonRepository = new Mock<IPokemonRepository>(MockBehavior.Strict);
-            this.mockPokemonParser = new Mock<IPokemonParser>();
+            mockPokemonRepository = new Mock<IPokemonRepository>(MockBehavior.Strict);
+            mockPokemonParser = new Mock<IPokemonParser>();
+            mockTranslationService = new Mock<ITranslationService>(MockBehavior.Strict);
 
-            this.pokemonService = new PokemonService(this.mockPokemonRepository.Object, this.mockPokemonParser.Object);
+            pokemonService = new PokemonService(mockPokemonRepository.Object, mockPokemonParser.Object, mockTranslationService.Object);
         }
 
         [Fact]
-        public async Task CallingGetPokemonDataReturnPokemonObject()
+        public async Task CallingGetPokemonDataReturnsPokemonObject()
         {
-            PokemonSpecies pokemonSpecies = new()
-            {
-                Name = "test",
-                Description = new(),
-                Habitat = new(),
-                isLegendary = false,
-            };
+            mockPokemonRepository.Setup(x => x.GetPokemonSpecies("test")).ReturnsAsync(pokemonSpecies);
 
-            Pokemon pokemon = new()
-            {
-                Name = "test",
-                Description = "expected",
-                Habitat = "something",
-                IsLegendary = false,
-            };
+            mockPokemonParser.Setup(x => x.ParsePokemon(pokemonSpecies)).Returns(pokemon);
 
-            this.mockPokemonRepository.Setup(x => x.GetPokemonSpecies("test")).ReturnsAsync(pokemonSpecies);
-
-            this.mockPokemonParser.Setup(x => x.ParsePokemon(pokemonSpecies)).Returns(pokemon);
-
-            var response = await this.pokemonService.GetPokemonData("test");
+            var response = await pokemonService.GetPokemonData("test");
 
             response.Should().BeOfType<Pokemon>();
 
-            this.mockPokemonRepository.Verify(a => a.GetPokemonSpecies("test"), Times.Once);
-            this.mockPokemonParser.Verify(a => a.ParsePokemon(pokemonSpecies), Times.Once);
+            mockPokemonRepository.Verify(a => a.GetPokemonSpecies("test"), Times.Once);
+            mockPokemonParser.Verify(a => a.ParsePokemon(pokemonSpecies), Times.Once);
+        }
+
+        [Fact]
+        public async Task CallingGetTranslatedPokemonDataReturnsPokemonObject()
+        {
+            mockPokemonRepository.Setup(x => x.GetPokemonSpecies("test")).ReturnsAsync(pokemonSpecies);
+
+            mockPokemonParser.Setup(x => x.ParsePokemon(pokemonSpecies)).Returns(pokemon);
+
+            mockTranslationService.Setup(x => x.GetTranslation(pokemon)).ReturnsAsync("translated");
+
+            var response = await pokemonService.GetTranslatedPokemonData("test");
+
+            response.Should().BeOfType<Pokemon>();
+
+            mockPokemonRepository.Verify(a => a.GetPokemonSpecies("test"), Times.Once);
+            mockPokemonParser.Verify(a => a.ParsePokemon(pokemonSpecies), Times.Once);
+            mockTranslationService.Verify(a => a.GetTranslation(pokemon), Times.Once);
         }
     }
 }

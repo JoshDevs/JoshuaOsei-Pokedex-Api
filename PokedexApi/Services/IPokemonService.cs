@@ -11,8 +11,15 @@ namespace PokedexApi.Services
         /// <summary>
         /// Gets the data of Pokemon.
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="name">Name of Pokemon.</param>
         /// <returns>An object of <see cref="Pokemon"/>.</returns>
         Task<Pokemon> GetPokemonData(string name);
+
+        /// <summary>
+        /// Gets the translated data of Pokemon.
+        /// </summary>
+        /// <param name="name">Name of Pokemon.</param>
+        /// <returns>An object of <see cref="Pokemon"/>.</returns>
+        Task<Pokemon> GetTranslatedPokemonData(string name);
     }
 }

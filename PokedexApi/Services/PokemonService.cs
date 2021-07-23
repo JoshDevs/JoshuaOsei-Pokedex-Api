@@ -15,28 +15,42 @@
     {
         private readonly IPokemonRepository pokemonRepository;
         private readonly IPokemonParser pokemonParser;
+        private readonly ITranslationService translationService;
 
         /// <summary>
         /// Initializes new instance of the <see cref="PokemonService"/> class.
         /// </summary>
-        /// <param name="logger"></param>
         /// <param name="pokemonRepository"></param>
         /// <param name="pokemonParser"></param>
-        public PokemonService(IPokemonRepository pokemonRepository, IPokemonParser pokemonParser)
+        public PokemonService(IPokemonRepository pokemonRepository, IPokemonParser pokemonParser, ITranslationService translationService)
         {
             this.pokemonRepository = pokemonRepository;
             this.pokemonParser = pokemonParser;
+            this.translationService = translationService;
         }
 
+        /// <inheritdoc/>
         public async Task<Pokemon> GetPokemonData(string name)
         {
             // Note: PokeApi only accepts lower case names so will account for capital inputs in this method
 
-            PokemonSpecies response = await this.pokemonRepository.GetPokemonSpecies(name.ToLower());
+            PokemonSpecies response = await pokemonRepository.GetPokemonSpecies(name.ToLower());
 
-            var parsed = this.pokemonParser.ParsePokemon(response);
+            var parsed = pokemonParser.ParsePokemon(response);
 
             return parsed;
+        }
+
+        /// <inheritdoc/>
+        public async Task<Pokemon> GetTranslatedPokemonData(string name)
+        {
+            PokemonSpecies pokemonSpecies = await pokemonRepository.GetPokemonSpecies(name.ToLower());
+
+            Pokemon pokemon = pokemonParser.ParsePokemon(pokemonSpecies);
+
+            pokemon.Description = await translationService.GetTranslation(pokemon);
+
+            return pokemon;
         }
     }
 }

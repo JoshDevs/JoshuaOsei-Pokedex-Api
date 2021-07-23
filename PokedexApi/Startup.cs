@@ -46,7 +46,9 @@ namespace PokedexApi
             services.AddHttpClient<IPokemonRepository, PokemonRepository>();
 
             services.AddScoped<IPokemonParser, PokemonParser>()
-                .AddScoped<IPokemonService, PokemonService>();
+                .AddScoped<IPokemonService, PokemonService>()
+                .AddScoped<ITranslationService, TranslationService>()
+                .AddScoped<ITranslationRequestBuilder, TranslationRequestBuilder>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

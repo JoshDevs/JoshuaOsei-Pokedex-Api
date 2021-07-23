@@ -1,6 +1,5 @@
 ﻿namespace PokedexApi.Test.ControllerTests
 {
-    using System;
     using Moq;
     using FluentAssertions;
     using Xunit;
@@ -17,20 +16,31 @@
 
         public PokemonControllerTest()
         {
-            this.mockPokemonService = new Mock<IPokemonService>(MockBehavior.Strict);
+            mockPokemonService = new Mock<IPokemonService>(MockBehavior.Strict);
 
-            this.pokemonController = new PokemonController(this.mockPokemonService.Object);
+            pokemonController = new PokemonController(this.mockPokemonService.Object);
         }
 
         [Fact]
-        public async Task CallingGetPokemonReturnPokemObject()
+        public async Task CallingGetPokemonReturnsPokemonObject()
         {
-            this.mockPokemonService.Setup(x => x.GetPokemonData("test")).ReturnsAsync(new Pokemon());
+            mockPokemonService.Setup(x => x.GetPokemonData("test")).ReturnsAsync(new Pokemon());
 
             var response = await this.pokemonController.GetPokemon("test");
             response.Should().BeOfType<Pokemon>();
 
-            this.mockPokemonService.Verify(a => a.GetPokemonData("test"), Times.Once);
+            mockPokemonService.Verify(a => a.GetPokemonData("test"), Times.Once);
+        }
+
+        [Fact]
+        public async Task CallingGetTranslatedPokemonReturnsPokemonObject()
+        {
+            mockPokemonService.Setup(x => x.GetTranslatedPokemonData("test")).ReturnsAsync(new Pokemon());
+
+            var response = await this.pokemonController.GetTranslatedPokemon("test");
+            response.Should().BeOfType<Pokemon>();
+
+            mockPokemonService.Verify(a => a.GetTranslatedPokemonData("test"), Times.Once);
         }
     }
 }
