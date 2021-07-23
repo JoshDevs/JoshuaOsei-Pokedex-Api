@@ -15,3 +15,4 @@ Pokedex Rest Api
 - Keep track of the rate limit set by the pokeApi and handle accordingly
 - Get test coverage to or as close to 100% as possible
 - Include comprehensive logging for monitoring on a production platform
+- gitignore file to ensure only the required files are kept in the repo
