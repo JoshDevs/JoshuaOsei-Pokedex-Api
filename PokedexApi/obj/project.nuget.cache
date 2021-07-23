@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "/iPev48RuIBeM3xqUklPlehaacW3vn7GFUwep44ErfMCDG3bOeYPbMPA53K21Z6xW2KR+763raxTfd48pXee/w==",
+  "dgSpecHash": "5D7Joe+Fa2DOOFsnY722ItGg1avGf5RozXczNbbPZY5WgajGHEcUrO+PvsQFj7mheyIbaCxMOMHHNSA1PqwIZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joo01\\source\\JoshuaOsei-Pokedex-Api\\PokedexApi\\PokedexApi.csproj",
+  "projectFilePath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi/PokedexApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\joo01\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\joo01\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\joo01\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\joo01\\.nuget\\packages\\sonaranalyzer.csharp\\8.26.0.34506\\sonaranalyzer.csharp.8.26.0.34506.nupkg.sha512",
-    "C:\\Users\\joo01\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.4\\swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
-    "C:\\Users\\joo01\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.4\\swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
-    "C:\\Users\\joo01\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.4\\swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
-    "C:\\Users\\joo01\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.4\\swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512"
+    "/Users/joshuaosei/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/joshuaosei/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/joshuaosei/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/joshuaosei/.nuget/packages/sonaranalyzer.csharp/8.26.0.34506/sonaranalyzer.csharp.8.26.0.34506.nupkg.sha512",
+    "/Users/joshuaosei/.nuget/packages/swashbuckle.aspnetcore/6.1.4/swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
+    "/Users/joshuaosei/.nuget/packages/swashbuckle.aspnetcore.swagger/6.1.4/swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
+    "/Users/joshuaosei/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.1.4/swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
+    "/Users/joshuaosei/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.1.4/swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512"
   ],
   "logs": []
 }

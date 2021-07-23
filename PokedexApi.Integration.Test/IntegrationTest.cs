@@ -2,17 +2,17 @@
 {
     using System.Net.Http;
     using Microsoft.AspNetCore.Mvc.Testing;
+    using Xunit;
 
     /// <summary>
     /// Base Integration Test Class
     /// </summary>
-    public class IntegrationTest
+    public class IntegrationTest : IClassFixture<WebApplicationFactory<Startup>>
     {
         protected readonly HttpClient httpClient;
 
-        protected IntegrationTest()
+        protected IntegrationTest(WebApplicationFactory<Startup> factory)
         {
-            var factory = new WebApplicationFactory<Startup>();
             httpClient = factory.CreateClient();
         }
     }
