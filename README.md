@@ -18,3 +18,4 @@ Unit test coverage included in Test project
 - Get test coverage to or as close to 100% as possible
 - Include comprehensive logging for monitoring on a production platform
 - gitignore file to ensure only the required files are kept in the repo
+- Avoid exposing swagger api docs to the user of the api
