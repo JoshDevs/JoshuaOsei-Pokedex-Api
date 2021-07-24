@@ -1,5 +1,6 @@
 ﻿namespace PokedexApi.Controllers
 {
+    using System;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using PokedexApi.Models;
@@ -31,7 +32,14 @@
         [HttpGet("{name}")]
         public async Task<Pokemon> GetPokemon(string name)
         {
-            return await this.pokemonService.GetPokemonData(name);
+            try
+            {
+                return await pokemonService.GetPokemonData(name);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Unable to retrieve {name}.", e);
+            }
         }
 
         /// <summary>
@@ -42,7 +50,14 @@
         [HttpGet("/translated/{name}")]
         public async Task<Pokemon> GetTranslatedPokemon(string name)
         {
-            return await pokemonService.GetTranslatedPokemonData(name);
+            try
+            {
+                return await pokemonService.GetTranslatedPokemonData(name);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Unable to retrieve translation of {name}", e);
+            }
         }
     }
 }

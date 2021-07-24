@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Logging;
 namespace PokedexApi
 {
     // static to show that Program class is not to be instantiated by any other class
+    [ExcludeFromCodeCoverage]
     public static class Program
     {
         public static void Main(string[] args)

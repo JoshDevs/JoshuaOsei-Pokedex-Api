@@ -7,6 +7,7 @@
     using PokedexApi.Controllers;
     using System.Threading.Tasks;
     using PokedexApi.Models;
+    using System;
 
     public class PokemonControllerTest
     {
@@ -26,10 +27,18 @@
         {
             mockPokemonService.Setup(x => x.GetPokemonData("test")).ReturnsAsync(new Pokemon());
 
-            var response = await this.pokemonController.GetPokemon("test");
+            var response = await pokemonController.GetPokemon("test");
             response.Should().BeOfType<Pokemon>();
 
             mockPokemonService.Verify(a => a.GetPokemonData("test"), Times.Once);
+        }
+
+        [Fact]
+        public async Task CallingGetPokemonWithInvalidNameThrowsException()
+        {
+            mockPokemonService.Setup(x => x.GetPokemonData("error")).Throws(new Exception());
+
+            await Assert.ThrowsAsync<Exception>(() => pokemonController.GetPokemon("error"));
         }
 
         [Fact]
@@ -37,10 +46,18 @@
         {
             mockPokemonService.Setup(x => x.GetTranslatedPokemonData("test")).ReturnsAsync(new Pokemon());
 
-            var response = await this.pokemonController.GetTranslatedPokemon("test");
+            var response = await pokemonController.GetTranslatedPokemon("test");
             response.Should().BeOfType<Pokemon>();
 
             mockPokemonService.Verify(a => a.GetTranslatedPokemonData("test"), Times.Once);
+        }
+
+        [Fact]
+        public async Task CallingGetTranslatedPokemonWithInvalidNameThrowsException()
+        {
+            mockPokemonService.Setup(x => x.GetTranslatedPokemonData("error")).Throws(new Exception());
+
+            await Assert.ThrowsAsync<Exception>(() => pokemonController.GetTranslatedPokemon("error"));
         }
     }
 }

@@ -224,7 +224,7 @@ var assemblies = [
   {
     "name": "PokedexApi",
     "classes": [
-      { "name": "PokedexApi.Controllers.PokemonController", "rp": "PokedexApi_PokemonController.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 48, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "PokedexApi.Controllers.PokemonController", "rp": "PokedexApi_PokemonController.html", "cl": 18, "ucl": 0, "cal": 18, "tl": 63, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Dto.Description", "rp": "PokedexApi_Description.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 22, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Dto.DescriptionLanguage", "rp": "PokedexApi_DescriptionLanguage.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Dto.Habitat", "rp": "PokedexApi_Habitat.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -236,11 +236,9 @@ var assemblies = [
       { "name": "PokedexApi.Helpers.PokemonParser", "rp": "PokedexApi_PokemonParser.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 26, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Helpers.TranslationRequestBuilder", "rp": "PokedexApi_TranslationRequestBuilder.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 26, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Models.Pokemon", "rp": "PokedexApi_Pokemon.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "PokedexApi.Program", "rp": "PokedexApi_Program.html", "cl": 0, "ucl": 8, "cal": 8, "tl": 27, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Repositories.PokemonRepository", "rp": "PokedexApi_PokemonRepository.html", "cl": 0, "ucl": 20, "cal": 20, "tl": 57, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Services.PokemonService", "rp": "PokedexApi_PokemonService.html", "cl": 17, "ucl": 0, "cal": 17, "tl": 56, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "PokedexApi.Services.TranslationService", "rp": "PokedexApi_TranslationService.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 39, "ct": "LineCoverage", "mc": "-", "cb": 4, "tb": 4, "lch": [], "bch": [], "hc": [] },
-      { "name": "PokedexApi.Startup", "rp": "PokedexApi_Startup.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 84, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 2, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 

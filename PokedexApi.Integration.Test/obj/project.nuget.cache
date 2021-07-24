@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BcBXaAc0TuJSncH+lMvs5O+fAlW+gSqnJYhgj7/5+kRYjj4pgb//HYm8rRL64UDcrTgeFfQ0lFf4JJcE6Gfsgg==",
+  "dgSpecHash": "Lr0SiKO3bDsOrGms14sVTaTlup4gcj+AO0ySTPK9ec7aw3lK0KzflQg4h3FUUbZu95ypWSCiQLN9z+alQ5EQjw==",
   "success": true,
   "projectFilePath": "/Users/joshuaosei/source/JoshuaOsei-Pokedex-Api/PokedexApi.Integration.Test/PokedexApi.Integration.Test.csproj",
   "expectedPackageFiles": [
